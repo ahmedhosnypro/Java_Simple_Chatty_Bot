@@ -1,7 +1,8 @@
+<h2>Types and variables</h2>
 <html>
  <head></head>
  <body>
-  <h2 style="text-align: center;">Declaring and initializing</h2> 
+  <h5 style="text-align: center;">Declaring and initializing</h5> 
   <p>A <strong>variable</strong> is a placeholder for storing a value of a particular <strong>type: </strong>a string, a number, or something else. Every variable has a <strong>name </strong>(also known as<strong> an identifier)</strong> to distinguish it from others. Before you start using a variable, you must declare it.</p> 
   <p>The general form of declaration is the following:</p> 
   <pre><code class="language-java">DataType variableName = initialization;</code></pre> 
@@ -25,7 +26,7 @@
   </div>
   <p></p> 
   <p>Variables can store not only strings and numbers, but also characters and other data types which we will learn about later in the next topics.</p> 
-  <h2 style="text-align: center;">Accessing the value of a variable</h2> 
+  <h5 style="text-align: center;">Accessing the value of a variable</h5> 
   <p>Once a variable has been declared, its value can be accessed and modified using the name. In the example below, we declare a variable and then print it:</p> 
   <pre><code class="language-java">String dayOfWeek = "Monday";
 System.out.println(dayOfWeek); // Monday</code></pre> 
@@ -44,7 +45,7 @@ System.out.println(dayOfWeek); // Tuesday</code></pre>
   <pre><code class="language-java">int number = 10;
 number = 11; // ok
 number = "twelve"; // it does not work!</code></pre> 
-  <h2 style="text-align: center;">Alternative forms of declaration</h2> 
+  <h5 style="text-align: center;">Alternative forms of declaration</h5> 
   <p>There are several alternative forms of declaration which are less commonly used in practice. Here are several of them in particular examples.</p> 
   <ul> 
    <li>Declaring several variables of the same type as a single statement:</li> 
@@ -56,7 +57,7 @@ number = "twelve"; // it does not work!</code></pre>
   <pre><code class="language-java">int age; // declaration
 age = 35; // initialization</code></pre> 
   <p>However, as we have already noted, these forms are rarely used.</p> 
-  <h2 style="text-align: center;">Type inference</h2> 
+  <h5 style="text-align: center;">Type inference</h5> 
   <p>Since Java 10, you can write <strong>var</strong> instead of a specific type to force automatic type inference based on the type of assigned value:</p> 
   <pre><code class="language-java">var variableName = initialization;</code></pre> 
   <p>Here are two examples below:</p> 

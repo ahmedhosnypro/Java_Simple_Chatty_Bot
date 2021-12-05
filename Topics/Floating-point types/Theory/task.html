@@ -1,10 +1,11 @@
+<h2>Floating-point types</h2>
 <html>
  <head></head>
  <body>
   <p>A decimal numeral refers generally to the notation of a number in the decimal system, which contains a separator (for example 0.01 or 3.1415). Such numbers represent fractions which are often used in science, statistics, engineering, and many other fields.</p> 
   <p>Java has two basic types to represent decimal numbers: <code class="language-java">float</code> and <code class="language-java">double</code>. They are called <strong>floating-point types</strong>. In fact, these types cannot represent an arbitrary decimal number, because they support only a limited number of significant decimal digits (6-7 for <code class="language-java">float</code>, and 14-16 for <code class="language-java">double</code>). In addition, <code class="language-java">double</code> can represent a wider range of numbers than <code class="language-java">float</code>.</p> 
   <p>In practice, programmers mostly use the <code class="language-java">double</code> type and we recommend you to use it for our code challenges. But all the information below is valid for the <code class="language-java">float</code> type as well.</p> 
-  <h2 style="text-align: center;">Declaring variables and assigning values</h2> 
+  <h5 style="text-align: center;">Declaring variables and assigning values</h5> 
   <p>In a program, the <code class="language-java">double</code> literal looks like <code class="language-java">5.2</code> where the dot character separates the integer and fractional parts of a number.</p> 
   <p>There are several initialized <code class="language-java">double</code> variables below:</p> 
   <pre><code class="language-java">double zero = 0.0;
@@ -26,7 +27,7 @@ System.out.println(f);           // it only prints 0.8888889</code></pre>
   <p>Floating-point types have a specific way to mark values with a mantissa:</p> 
   <pre><code class="language-java">double eps = 5e-3; // means 5 * 10^(-3) = 0.005
 double n = 0.01e2; // means 0.01 * 10^2 = 1.0</code></pre> 
-  <h2 style="text-align: center;">Arithmetic operations</h2> 
+  <h5 style="text-align: center;">Arithmetic operations</h5> 
   <p>You can perform all types of arithmetic operations with floating-point types.</p> 
   <pre><code class="language-java">double one = 1.0;
 double number = one + 1.5; // 2.5
@@ -43,7 +44,7 @@ double squaredPi = pi * pi; // 9.86902225</code></pre>
   <pre><code class="language-java">double d1 = 5 / 4; // 1.0
 double d2 = 5.0 / 4; // 1.25</code></pre> 
   <p>In the first case, we perform integer division that produces an integer result and then assign the result to <code class="language-java">d1</code>. In the second case, we perform a real division that produces a double value and then assign the value to <code class="language-java">d2</code>.</p> 
-  <h2 style="text-align: center;">Errors during computations</h2> 
+  <h5 style="text-align: center;">Errors during computations</h5> 
   <p>Be careful! Operations with floating-point numbers can produce an inaccurate result:</p> 
   <pre><code class="language-java">System.out.println(3.3 / 3); // prints 1.0999999999999999</code></pre> 
   <p>Errors can accumulate during computation. In the following example we calculate the sum of ten decimals <strong>0.1</strong>:</p> 
@@ -51,7 +52,7 @@ double d2 = 5.0 / 4; // 1.25</code></pre>
 System.out.println(d); // it prints 0.9999999999999999</code></pre> 
   <p>In the following lessons, we will find out how to deal with this issue. For now, just take it into consideration.</p> 
   <p>If you want to learn more about floating-point numbers, you may read <a target="_blank" href="https://introcs.cs.princeton.edu/java/91float/" rel="noopener noreferrer nofollow">this article</a> as an addition.</p> 
-  <h2 style="text-align: center;">Reading floating-point numbers</h2> 
+  <h5 style="text-align: center;">Reading floating-point numbers</h5> 
   <p>You can use <code class="language-java">Scanner</code> to read the values of both floating-point types from the standard input.</p> 
   <pre><code class="language-java">Scanner scanner = new Scanner(System.in);
 
@@ -85,7 +86,7 @@ public class AreaOfTriangle {
   <p><strong>Output 2:</strong></p> 
   <pre><code class="language-css">4.4110000000000005</code></pre> 
   <p>It is possible to round or format a double result, but we will not do it in this lesson. In the coding problems, output a result as-is.</p> 
-  <h2 style="text-align: center;">The decimal separator</h2> 
+  <h5 style="text-align: center;">The decimal separator</h5> 
   <p>If you solve our coding problems locally or try to repeat our examples, you may encounter a problem with your computer having different locale settings. In this case, the <strong>Scanner</strong> cannot read floating-point numbers with the dot character (<strong>3.1415</strong>). Try to input numbers written with the comma separator (<strong>3,1415</strong>).</p> 
   <p>If you want to use the dot character without modifying your local settings, try using the following code to create a scanner:</p> 
   <pre><code class="language-java">Scanner scanner = new Scanner(System.in).useLocale(Locale.US);</code></pre> 

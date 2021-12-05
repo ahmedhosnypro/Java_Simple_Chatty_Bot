@@ -1,10 +1,11 @@
+<h2>StringBuilder</h2>
 <html>
  <head></head>
  <body>
-  <h2 style="text-align: center;">Mutable strings</h2> 
+  <h5 style="text-align: center;">Mutable strings</h5> 
   <p>As you may know, strings in Java are <strong>immutable</strong>. It means that once created, a string cannot be changed. If we want to modify the content of a string object, we should create a new string. This may not be the best way when we perform a lot of modifications because each operation creates a new object, which is bad for performance.</p> 
   <p>Fortunately, there is a special class named <code class="language-java">StringBuilder</code> that is used to create mutable string objects. An object of this class is similar to a regular string, except that it can be modified. As an example, it is better to use <code class="language-java">StringBuilder</code> than <code class="language-java">String</code> where lots of concatenations are performed at runtime.</p> 
-  <h2 style="text-align: center;">Constructing objects</h2> 
+  <h5 style="text-align: center;">Constructing objects</h5> 
   <p>It is possible to create an empty object of the type <code class="language-java">StringBuilder</code>:</p> 
   <pre><code class="language-java">StringBuilder empty = new StringBuilder();
 System.out.println(empty); // ""</code></pre> 
@@ -16,7 +17,7 @@ System.out.println(sb); // "Hello!"</code></pre>
    <strong>Note,</strong> we do not need to import anything to use this class in programs.
   </div>
   <p></p> 
-  <h2 style="text-align: center;">Some important methods</h2> 
+  <h5 style="text-align: center;">Some important methods</h5> 
   <p>The <code class="language-java">StringBuilder</code> class provides a set of useful methods to manipulate objects. Let's consider some of them.</p> 
   <ul> 
    <li><code class="language-java">int length()</code> returns the length (the character count), like in regular strings. This method does not modify the object.</li> 
@@ -95,7 +96,7 @@ System.out.println(sb); // "4 * 8 + 3 * 2"</code></pre>
   </div>
   <p></p> 
   <p>For more details about methods see the <a target="_blank" href="https://docs.oracle.com/javase/10/docs/api/java/lang/StringBuilder.html" rel="nofollow noopener noreferrer">documentation</a>.</p> 
-  <h2 style="text-align: center;">The length() and capacity()</h2> 
+  <h5 style="text-align: center;">The length() and capacity()</h5> 
   <p>There are two methods that should not be confused: <code class="language-java">length</code> and <code class="language-java">capacity</code>. The <code class="language-java">length</code> returns the actual number of characters whereas <code class="language-java">capacity</code> returns the amount of storage available for newly inserted characters, beyond which an allocation will occur. The capacity is a part of the internal representation of <code class="language-java">StringBuilder</code>, and its value will dynamically change.</p> 
   <p>The following example will help you better distinguish these methods:</p> 
   <pre><code class="language-java">StringBuilder sb = new StringBuilder(); // initial capacity is 16
@@ -112,7 +113,7 @@ System.out.println(sb.capacity()); // 34</code></pre>
 
 System.out.println(sb.length());   // 0
 System.out.println(sb.capacity()); // 30</code></pre> 
-  <h2 style="text-align: center;">Conclusion</h2> 
+  <h5 style="text-align: center;">Conclusion</h5> 
   <p>The <code class="language-java">StringBuilder</code> class is used to create mutable strings, which can be modified at runtime. You can perform different operations on <code class="language-java">StringBuilder</code> objects, like append, reverse, replace, delete, etc. No new objects will be created. It is recommended to use this class instead of <code class="language-java">String</code> when a lot of modifications are performed. This will prevent the creation of multiple intermediate objects; therefore, it will work faster and require less memory. One common case for this is a sequence of concatenations.</p> 
   <p></p>
   <div class="alert alert-primary">

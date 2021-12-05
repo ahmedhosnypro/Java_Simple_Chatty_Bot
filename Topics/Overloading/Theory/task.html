@@ -1,8 +1,9 @@
+<h2>Overloading</h2>
 <html>
  <head></head>
  <body>
   <p>Overloading allows you to change the method’s signature: the number of parameters, their type or both. If methods have the same name, but a different number or type of parameters, they are <strong>overloaded</strong>. It means you can invoke different methods by the same name by passing different arguments.</p> 
-  <h2>How to overload methods</h2> 
+  <h5>How to overload methods</h5> 
   <p>As an example, let's consider some overloaded method from the standard class <code class="language-java">Math</code>:</p> 
   <pre><code class="language-java">public static int abs(int a) { return (a &lt; 0) ? -a : a; }
 
@@ -53,7 +54,7 @@ another string again
   <p></p> 
   <p>The overloading mechanism allows us not to write different names for methods that perform similar operations.</p> 
   <p>Looking ahead, we'll assume that overloading is a form of the static (compile-time) polymorphism.</p> 
-  <h2 style="text-align: center;">Overloading and casting</h2> 
+  <h5 style="text-align: center;">Overloading and casting</h5> 
   <p>To understand how overloading deals with type casting, let's consider an example of overloaded methods that only differ in the type of the single argument and see when each of them will be invoked and why.</p> 
   <pre><code class="language-java">public class OverloadingExample {
 
@@ -99,7 +100,7 @@ another string again
         print((short) 100);  // explicit casting 
     }
 }</code></pre> 
-  <h2>Conclusion </h2> 
+  <h5>Conclusion </h5> 
   <p>Method overloading allows you to implement two or more methods with the same name, but different arguments. The arguments of such methods may differ in their number or type. This helps to avoid having various method references for similar tasks. When invoked, the proper method is chosen based on the provided arguments. If the argument has a different type from what is expected, the closest type of the argument in order of the implicit casting is used.</p>
  </body>
 </html>

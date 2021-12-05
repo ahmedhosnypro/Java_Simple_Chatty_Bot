@@ -1,24 +1,19 @@
 import java.util.Scanner;
+
 class Main {
     public static void main(String[] args) {
-        // put your code here
         Scanner scanner = new Scanner(System.in);
+        int units = scanner.nextInt();
 
-        int n1 = scanner.nextInt();
-
-        if (n1 < 1 ){
+        if (units < 1) {
             System.out.println("no army");
-        }
-        else if (n1 <= 19){
+        } else if (units <= 19) {
             System.out.println("pack");
-        }
-        else if (n1 <= 249){
+        } else if (units <= 249) {
             System.out.println("throng");
-        }
-        else if (n1 <= 999){
+        } else if (units <= 999) {
             System.out.println("zounds");
-        }
-        else {
+        } else {
             System.out.println("legion");
         }
     }

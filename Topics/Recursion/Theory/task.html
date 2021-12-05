@@ -1,12 +1,13 @@
+<h2>Recursion</h2>
 <html>
  <head></head>
  <body>
-  <h2 style="text-align: center;">Recursion basics</h2> 
+  <h5 style="text-align: center;">Recursion basics</h5> 
   <p>As you know, a method can call another method. What is even more interesting, a method can call itself. This possibility is known as <strong>recursion</strong> and the method calling itself is named <strong>recursive method</strong>.</p> 
   <p>As any regular method, a <strong>recursive method</strong> can contain parameters and return something, or it can take or return nothing.</p> 
   <p>But how many times should a method call itself? It should be limited. The method must have a special condition to stop the recursion, otherwise, the call stack will overflow and the execution will stop with an error.</p> 
   <p>To write <strong>recursive methods</strong> you should consider the solution of a problem as a smaller version of the same problem.</p> 
-  <h2 style="text-align: center;">The factorial example</h2> 
+  <h5 style="text-align: center;">The factorial example</h5> 
   <p>The classic example of the recursion is a math function calculating <strong>the factorial</strong>.</p> 
   <p></p>
   <div class="alert alert-primary">
@@ -39,7 +40,7 @@ long fact3 = factorial(3); // 6 (1 * 2 * 3)
 long fact4 = factorial(4); // 24 (1 * 2 * 3 * 4)</code></pre> 
   <p>As you can see, it returns the expected results.</p> 
   <p>But what happens if a recursive method never reaches a base case? The stack will never stop growing. If a program's stack exceeds the limit size, the <code class="language-java">StackOverflowError</code> occurs. It will crash the execution.</p> 
-  <h2 style="text-align: center;">Replacing recursion by a loop</h2> 
+  <h5 style="text-align: center;">Replacing recursion by a loop</h5> 
   <p>Every recursive method can be written iteratively using a loop.</p> 
   <p>Let's rewrite the factorial method in this way:</p> 
   <pre><code class="language-java">public static long factorial(long n) {
@@ -50,7 +51,7 @@ long fact4 = factorial(4); // 24 (1 * 2 * 3 * 4)</code></pre>
     return result;
 }</code></pre> 
   <p>You can be sure that the result will be the same.</p> 
-  <h2 style="text-align: center;">Types of recursions</h2> 
+  <h5 style="text-align: center;">Types of recursions</h5> 
   <p>There are several types of recursions.</p> 
   <p><strong>1) Direct recursion.</strong> A method invokes itself like the considered factorial method.</p> 
   <p><strong>2) Indirect recursion.</strong> A method invokes another method that invokes the original method.</p> 

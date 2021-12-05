@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-26T03:45:14" hostname="DESKTOP-SQGJGEQ" time="0.127">
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-05T08:14:31" hostname="LT" time="0.085">
   <properties/>
-  <testcase name="start" classname="Tests" time="0.127"/>
+  <testcase name="start" classname="Tests" time="0.085"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Hello! My name is Aid.
@@ -35,7 +35,7 @@ Why do we use methods?
 3. To determine the execution time of a program.
 4. To interrupt the execution of a program.
 > 1
-Please, try again
+Please, try again.
 > 2
 Congratulations, have a nice day!
 ]]></system-out>

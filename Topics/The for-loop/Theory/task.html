@@ -1,8 +1,9 @@
+<h2>The for-loop</h2>
 <html>
  <head></head>
  <body>
   <p>Sometimes we need to repeat a block of code a certain number of times. To do this, Java provides the <code class="language-java">for</code>-loop. This loop is often used to iterate over a range of values or through an array. If the number of iterations or the range borders are known, it is recommended to use the <code class="language-java">for</code>-loop. If they are unknown, the <code class="language-java">while</code>-loop may be the preferable solution.</p> 
-  <h2 style="text-align: center;">The basic for-loop syntax</h2> 
+  <h5 style="text-align: center;">The basic for-loop syntax</h5> 
   <p>The <code class="language-java">for</code>-loop has the following basic syntax:</p> 
   <pre><code class="language-java">for (initialization; condition; modification) {
     // do something
@@ -39,7 +40,7 @@ for (int i = startIncl; i &lt; endExcl; i++) {
 }
 
 System.out.println(sum); // it prints "55"</code></pre> 
-  <h2 style="text-align: center;">Skipping parts</h2> 
+  <h5 style="text-align: center;">Skipping parts</h5> 
   <p>The initialization statement, the condition, and the modification parts are optional, the for loop might not have all of them.</p> 
   <p>It is possible to declare a variable outside the loop:</p> 
   <p> </p> 
@@ -51,7 +52,7 @@ for (; i &gt; 0; i--) {
   <pre><code class="language-java">for (;;) {
     // do something
 }</code></pre> 
-  <h2 style="text-align: center;">Nested loops</h2> 
+  <h5 style="text-align: center;">Nested loops</h5> 
   <p>It's possible to nest one for-loop in another for-loop. This approach is used to process multidimensional structures like tables (matrices), data cubes, and so on.</p> 
   <p> </p> 
   <p>As an example, the following code prints the multiplication table of numbers from 1 to 9 (inclusive).</p> 
