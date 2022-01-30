@@ -3,13 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String intA = scanner.next();
+        String intB = scanner.next();
+        String intC = scanner.next();
 
-        int intA = scanner.nextInt();
-        int intB = scanner.nextInt();
-        int intC = scanner.nextInt();
-
-        int sum = intA + intB + intC;
-
-        System.out.println(sum); 
+        System.out.println(intA + intB + intC);
     }
 }

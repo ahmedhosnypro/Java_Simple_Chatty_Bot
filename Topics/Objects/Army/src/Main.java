@@ -3,16 +3,12 @@ import javax.print.Doc;
 class Army {
 
     public static void createArmy() {
-        Unit unit1 = new Unit("unit1");
-        Unit unit2 = new Unit("unit2");
-        Unit unit3 = new Unit("unit3");
-        Unit unit4 = new Unit("unit4");
-        Unit unit5 = new Unit("unit5");
-
-        Knight myKnight = new Knight("myKnight");
-        Knight myKnight2 = new Knight("myKnight");
-        Knight myKnight3 = new Knight("myKnight");
-
+        for (int i = 0; i < 5; i++) {
+            new Unit("myUnit");
+        }
+        for (int i = 0; i < 3; i++) {
+            new Knight("myKnight");
+        }
         General myGeneral = new General("myGeneral");
         Doctor myDoctor = new Doctor("myDoctor");
     }

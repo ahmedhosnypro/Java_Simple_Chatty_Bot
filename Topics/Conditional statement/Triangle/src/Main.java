@@ -4,13 +4,13 @@ class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double A = scanner.nextDouble();
-        double B = scanner.nextDouble();
-        double C = scanner.nextDouble();
+        double sideA = scanner.nextDouble();
+        double sideB = scanner.nextDouble();
+        double siedC = scanner.nextDouble();
 
-        if ((A + B > C) && (A + C > B) && (B + C > A)){
+        if ((sideA + sideB > siedC) && (sideA + siedC > sideB) && (sideB + siedC > sideA)) {
             System.out.println("YES");
-        }else {
+        } else {
             System.out.println("NO");
         }
     }

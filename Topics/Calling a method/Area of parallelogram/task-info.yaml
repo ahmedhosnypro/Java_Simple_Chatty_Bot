@@ -8,5 +8,8 @@ files:
     \ int h) {\n        System.out.println(b * h);\n    }\n}"
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/10981#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 29 Jan 2022 20:41:17 UTC
 record: -1

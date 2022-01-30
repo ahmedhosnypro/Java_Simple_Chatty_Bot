@@ -6,13 +6,12 @@ class Main {
         int num = scanner.nextInt();
         boolean cond = true;
         int i = 0;
-        for(i = num; cond;){
+        for (i = num; cond; ) {
             i++;
-            if(i % 2 == 0){
+            if (i % 2 == 0) {
                 cond = false;
             }
         }
-
         System.out.println(i);
     }
 }

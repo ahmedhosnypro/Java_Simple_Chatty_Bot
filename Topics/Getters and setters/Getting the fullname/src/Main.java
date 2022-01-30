@@ -18,11 +18,11 @@ class User {
     }
 
     public String getFullName() {
-        if (firstName.equals("") && lastName.equals("")){
+        if ("".equals(firstName) && ("").equals(lastName)) {
             return "Unknown";
         }
         return ((!firstName.equals("")) ? firstName : "")
-                +  ((!lastName.equals("")) ? " " + lastName : "");
+                + ((!lastName.equals("")) ? " " + lastName : "");
     }
 }
 

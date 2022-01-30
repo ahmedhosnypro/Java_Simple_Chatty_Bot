@@ -2,19 +2,16 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        // put your code here
         Scanner scanner = new Scanner(System.in);
-        int A = scanner.nextInt();
-        int B = scanner.nextInt();
-        int C = scanner.nextInt();
+        int hoursPerDay = scanner.nextInt();
+        int notMoreThanB = scanner.nextInt();
+        int sleeps = scanner.nextInt();
 
-        if (C < A){
+        if (sleeps < hoursPerDay) {
             System.out.println("Deficiency");
-        }
-        else if (C > B){
+        } else if (sleeps > notMoreThanB) {
             System.out.println("Excess");
-        }
-        else if (C >= A || C <= B){
+        } else {
             System.out.println("Normal");
         }
     }

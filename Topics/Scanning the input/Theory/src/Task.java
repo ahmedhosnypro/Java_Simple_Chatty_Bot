@@ -2,6 +2,6 @@
 
 public class Task {
   public static void main(String[] args) {
-    // put your code here
+    System.out.println("All robots speak Java".length());
   }
 }
